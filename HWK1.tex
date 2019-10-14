@@ -1,0 +1,94 @@
+% DOCUMENT FORMATING
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+
+% PACKAGES
+\usepackage{amsmath} % For extended formatting
+\usepackage{amssymb} % For math symbols
+\usepackage{amsthm} % For proof environment
+\usepackage{array} % For tables
+\usepackage{enumerate} % For lists
+\usepackage{extramarks} % For headers and footers
+\usepackage{fancyhdr} % For custom headers
+\usepackage{graphicx} % For inserting images
+\usepackage{multicol} % For multiple columns
+\usepackage{verbatim} % For displaying code
+\usepackage{tkz-euclide}
+\usepackage{pgfplots}
+
+% SET UP HEADER AND FOOTER
+\pagestyle{fancy}
+\lhead{\MyCourse} % Top left header
+\chead{\MyTopicTitle} % Top center header
+\rhead{\MyAssignment} % Top right header
+\lfoot{\MyCampus} % Bottom left footer
+\cfoot{} % Bottom center footer
+\rfoot{\MySemester} % Bottom right footer
+\renewcommand\headrulewidth{0.4pt} % Size of the header rule
+\renewcommand\footrulewidth{0.4pt} % Size of the footer rule
+% ----------
+% TITLES AND NAMES 
+% ----------
+
+\newcommand{\MyCourse}{Math 321}
+\newcommand{\MyTopicTitle}{Homework 1 part 2}
+\newcommand{\MyAssignment}{Shinya Saito\qquad \qquad \qquad}
+\newcommand{\MySemester}{Fall 2019}
+\newcommand{\MyCampus}{University of Hawaii at Manoa}
+
+
+
+\begin{document}
+\textbf{1b} You won't go skiing, or you will and there won't be any snow. \newline
+Let sk represent, "You will go skiing." \newline
+Let sn represent, "There will be snow." \newline 
+\textbf{Answer}: $\neg$sk $\vee$(sk$\wedge \neg$sn) \newline 
+\vspace{0.5cm}
+
+\textbf{2b}  I'll have either fish or chicken, but I won't have both fish and mashed potatoes. \newline 
+Let c represent the phrase, "I will have chicken" \newline 
+Let p represent the phrase, "I will have mashed potatoes". \newline
+Let f represent the phrase "I will have fish". \newline
+\textbf{Answer} (f $\vee$ c ) $\wedge \neg$(f $\wedge$ p) \newline
+
+\textbf{3}
+a) Alice and Bob are not both in the room. \newline
+Let A represent the phrase,  "Alice is in the room." \newline
+Let B represent the phrase, "Bob is in the room." \newline
+\textbf{Answer}: $\neg$(A$\wedge$ B) \newline
+b) Alice and Bob are both not in the room. \newline 
+If Alice is in the room Bob is not and so vice versa.\newline 
+Let A represent the phrase,  "Alice is in the room." \newline
+Let B represent the phrase, "Bob is in the room." \newline
+$\neg$ A $\wedge \neg$ B \newline
+c) Either Alice or Bob are not in the room. \newline 
+Let A represent the phrase,  "Alice is in the room." \newline
+Let B represent the phrase, "Bob is in the room." \newline
+\textbf{Answer}: ($\neg$ A) $\vee$ ($\neg$ B) \newline 
+d)Neither Alice or Bob are not in the room. \newline
+Let A represent the phrase,  "Alice is in the room." \newline
+Let B represent the phrase, "Bob is in the room." \newline
+\textbf{Answer}: $\neg$ (A $\vee$ B) \newline 
+\vspace{0.5cm} 
+
+\textbf{4} 
+a) $\neg (\neg P \vee \neg \neg R)$ \newline 
+$\neg \neg$ R has the same meaning of R by double negation \newline 
+$\neg P$ by negation rule means not P \newline 
+$\neg (\neg P \vee \neg \neg R) \equiv \neg(\neg P \vee R)$  \newline 
+
+This formula is well formed as the meaning still upholds even when the different rules are applied. \newline
+b) $\neg (P,Q, \wedge R)$ \newline 
+Based on what we are given, a (,) symbols is not a valid connectives, so therefore, this is not a well formed formula. \newline 
+c) P $\wedge \neg$ P\newline 
+This is a well formed formula as it has a comparison of a negation and itself. \newline
+d) (P $\vee$ Q)(P $\vee$R) \newline 
+Since there is no valid connectives between two statements this is not a valid one as you cannot multiply statements together. \newline
+\vspace{0.5cm} 
+\textbf{6a} (S $\vee$ G) $\wedge$ ($\neg$ S $\vee \neg G)$\newline 
+S $\rightarrow$ Steve is happy. \newline 
+G $\rightarrow$ George is happy. \newline 
+Since there is an and sign between two reasoning, that means one has to be happy and the other is not happy. \newline 
+Therefore in the English language: Either Steve or George is happy, and either Steve or George is not happy.  
+
+\end{document}
